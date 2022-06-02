@@ -1,0 +1,34 @@
+<body>
+  <br><br><br><br><br>
+  <div class="container-fluid d-flex justify-content-center">
+    <table class="table col-12">
+      <tr class="mb-2 text-center">
+        <th colspan="8">
+          <a href="agregador" class="secretbtns">Agregar camiseta</a>
+          <br>
+        </th>
+      </tr>
+      <tr class="bg-light">
+        <th scope="col">ID</th>
+        <th scope="col">Equipo</th>
+        <th scope="col">Temporada</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Camiseta</th>
+        <th scope="col">Administrar</th>
+      </tr> 
+      <tbody class="bg-light">
+      {{#each products}}
+        <tr>
+          <td>{{id}}</td>
+          <td>{{equipo}}</td>
+          <td>{{temporada}}</td>
+          <td>{{marca}}</td>
+          <td>${{precio}}</td>
+          <td><img src="{{imgUrl}}" alt="{{equipo}}"></td>
+          <td><a href="agregador/handleEdit/{{id}}">Borrar</a>-<a href="agregador/handleEdit/{{id}}">Editar</a></td>
+        </tr>
+      {{/each}}
+    </table>
+  </div>
+</body>
