@@ -3,7 +3,7 @@ const session = require("express-session");
 const path = require("path");
 const hbs = require("hbs");
 const fileupload = require("express-fileupload");
-const port = 3000;
+const PORT = 3000;
 require("dotenv").config();
 
 const routerIndex = require("./routes/index");
@@ -66,7 +66,7 @@ app.use("/stock", secured, routerStock);
 app.use("/agregador", secured, routerAgregador);
 app.use("/tienda", routerTienda);
 
-app.listen(port, (err) => {
+app.listen(PORT, (err) => {
     err? console.log("Error del servidor")
-    : console.log(`Servidor ejecutándose en http://localhost:${port}/`)
+    : console.log(`Servidor ejecutándose en http://localhost:${PORT}/`)
 });
