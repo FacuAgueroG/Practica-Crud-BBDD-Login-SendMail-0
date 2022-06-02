@@ -1,11 +1,11 @@
 {
-  "name": "Retro Futbol",
+  "name": "retrofutbol",
   "version": "1.0.0",
-  "description": "integrador-fs-utn",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app",
+    "dev": "nodemon app"
   },
   "author": "Facundo Agüero García",
   "license": "ISC",
