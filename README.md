@@ -9,7 +9,7 @@
 
 - SendMail realizado con nodemailer y mailtrap. Para el envio de formularios
 
---
+________________________________________________________________________________________________________________________________________
 
 - Proyecto con JS, Node JS, express, Mysql => Workbench. Con modelo-vista-controlador y trabajo de DOM
 
